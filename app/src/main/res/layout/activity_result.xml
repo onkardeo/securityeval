@@ -1,0 +1,193 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.onkar.securityeval.result"
+                android:background="#050505">
+
+
+
+
+    <TextView
+        android:text="Level of safety based on permissions given to applications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/permView"
+        android:textColor="#46ff1d"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:id="@+id/permperc"
+
+        android:textColor="#48ff08"
+        android:textSize="30dp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/permView"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:text="Is device rooted ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootView"
+        android:textColor="#46ff1d"
+        android:layout_below="@+id/permperc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/roota"
+        android:textColor="#48ff08"
+        android:textSize="30dp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/rootView"
+        android:layout_alignRight="@+id/upd"
+        android:layout_alignEnd="@+id/upd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is device updated ?"
+        android:id="@+id/update"
+        android:textColor="#38ff09"
+        android:layout_below="@+id/roota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:id="@+id/upd"
+        android:textColor="#38ff09"
+        android:textSize="30dp"
+        android:layout_below="@+id/update"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is device locked ?"
+        android:id="@+id/locked"
+        android:textColor="#5cff13"
+        android:layout_below="@+id/upd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/lock"
+        android:layout_below="@+id/locked"
+        android:layout_centerHorizontal="true"
+        android:textColor="#67ff18"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does the device has latest  OS Version ?"
+        android:id="@+id/version"
+        android:layout_below="@+id/lock"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#83f81f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:id="@+id/vers"
+        android:layout_below="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:textColor="#74fa1b"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is user a human?"
+        android:id="@+id/user"
+        android:layout_below="@+id/vers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#46fc12"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/useri"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:textColor="#45fa0e"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Result"
+        android:id="@+id/but2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pro"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is sufficient ram memory available?"
+        android:id="@+id/memory"
+        android:layout_below="@+id/useri"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#2afc14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/ram"
+        android:layout_below="@+id/memory"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2cff08"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of processes in error state"
+        android:id="@+id/process"
+        android:textColor="#08f809"
+        android:layout_below="@+id/ram"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/pro"
+        android:textColor="#08f80b"
+        android:textSize="30dp"
+        android:layout_below="@+id/process"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

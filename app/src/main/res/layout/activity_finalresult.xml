@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.onkar.securityeval.finalresult"
+                android:background="#000008">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="#10fc15"
+        android:id="@+id/t1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:src="@drawable/saf1"
+        android:layout_marginTop="133dp"
+        android:layout_below="@+id/t1"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:minHeight="400dp"
+        android:minWidth="400dp"/>
+
+</RelativeLayout>
